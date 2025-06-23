@@ -8,7 +8,7 @@
     <a href="index.html">ebooks</a>
   </nav>
 
-﻿<iframe title="wireframe-MD34oPN6oQNjruvz6vu5" srcdoc="<html><head>
+<iframe title="wireframe-gntvQ1xGpOc3jduLdE1F" srcdoc="<html><head>
     <meta charset=&quot;UTF-8&quot;>
     <meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;>
     <script src=&quot;https://cdn.tailwindcss.com&quot;></script>
@@ -43,9 +43,6 @@
             overflow-x: auto;
             scrollbar-width: none;
         }
-        .shelf-gradient {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
     </style>
 <link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;><link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin=&quot;&quot;><link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&amp;amp;display=swap&quot;><style>
   .highlighted-section {
@@ -71,402 +68,367 @@
     <!-- Header -->
     <header id=&quot;header&quot; class=&quot;fixed top-0 left-0 right-0 bg-white shadow-md px-4 py-3 flex items-center justify-between z-50&quot;>
         <div class=&quot;flex items-center gap-3&quot;>
-            <h1 class=&quot;text-lg font-bold text-dark&quot;>Minha Estante</h1>
+            <div class=&quot;w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-white&quot;>
+                <i class=&quot;fa-solid fa-book-open text-lg&quot;></i>
+            </div>
+            <div>
+                <p class=&quot;text-sm text-gray-500&quot;>Olá,</p>
+                <p class=&quot;text-base font-bold text-dark -mt-1&quot;>Lucas!</p>
+            </div>
         </div>
-        <div class=&quot;flex items-center gap-3&quot;>
-            <button class=&quot;w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center&quot;>
-                <i class=&quot;fa-solid fa-sliders text-gray-600&quot;></i>
-            </button>
-            <button class=&quot;w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center&quot;>
-                <i class=&quot;fa-solid fa-filter text-gray-600&quot;></i>
-            </button>
+        <div class=&quot;flex items-center gap-4&quot;>
+            <div class=&quot;flex items-center gap-1 bg-gray-100 rounded-full px-3 py-1&quot;>
+                <i class=&quot;fa-solid fa-coins text-accent&quot;></i>
+                <span class=&quot;text-sm font-bold&quot;>245</span>
+                <button class=&quot;w-5 h-5 bg-primary rounded-full flex items-center justify-center ml-1&quot;>
+                    <i class=&quot;fa-solid fa-plus text-[10px] text-white&quot;></i>
+                </button>
+            </div>
+            <div class=&quot;relative&quot;>
+                <i class=&quot;fa-regular fa-bell text-xl text-gray-600&quot;></i>
+                <span class=&quot;absolute -top-1 -right-1 w-4 h-4 bg-secondary rounded-full flex items-center justify-center text-[10px] text-white font-bold&quot;>3</span>
+            </div>
         </div>
     </header>
 
     <!-- Main Content -->
     <main class=&quot;mt-16 pb-16&quot;>
-        <!-- User Reading Summary -->
-        <section id=&quot;reading-summary&quot; class=&quot;px-4 pt-4&quot;>
-            <div class=&quot;bg-gradient-to-r from-primary to-indigo-500 rounded-2xl p-4 text-white&quot;>
-                <div class=&quot;flex items-center justify-between&quot;>
-                    <div>
-                        <h2 class=&quot;text-xl font-bold&quot;>Você já leu</h2>
-                        <p class=&quot;text-3xl font-black&quot;>12 livros</p>
-                        <p class=&quot;text-sm opacity-90&quot;>este mês!</p>
-                    </div>
-                    <div class=&quot;text-right&quot;>
-                        <div class=&quot;w-16 h-16 rounded-full bg-white bg-opacity-20 flex items-center justify-center mb-2&quot;>
-                            <i class=&quot;fa-solid fa-crown text-2xl text-yellow-300&quot;></i>
+        <!-- Destaques (Highlights) -->
+        <section id=&quot;highlights&quot; class=&quot;px-4 pt-4&quot;>
+            <div class=&quot;scroll-x -mx-4 px-4&quot;>
+                <div class=&quot;flex gap-3 pb-4&quot;>
+                    <div id=&quot;featured-book&quot; class=&quot;w-[280px] h-[140px] rounded-xl bg-gradient-to-r from-primary to-indigo-400 p-3 flex-shrink-0 relative overflow-hidden&quot;>
+                        <div class=&quot;absolute top-2 right-2 bg-white bg-opacity-90 rounded-lg px-2 py-1&quot;>
+                            <span class=&quot;text-xs font-bold text-primary&quot;>Destaque</span>
                         </div>
-                        <p class=&quot;text-xs&quot;>Nível 4</p>
-                        <p class=&quot;text-xs font-bold&quot;>Explorador</p>
+                        <div class=&quot;flex h-full&quot;>
+                            <div class=&quot;w-[80px] h-[110px] bg-white rounded-lg shadow-lg overflow-hidden&quot;>
+                                <img class=&quot;w-full h-full object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/e8a3dfaf84-e6e3d0322f981a607cc2.png&quot; alt=&quot;educational ebook cover design, colorful, modern, math themed&quot;>
+                            </div>
+                            <div class=&quot;ml-3 flex flex-col justify-between flex-1&quot;>
+                                <div>
+                                    <h3 class=&quot;text-white font-bold text-lg leading-tight&quot;>Matemática Aplicada</h3>
+                                    <p class=&quot;text-white text-opacity-90 text-xs&quot;>Prof. Carlos Silva</p>
+                                </div>
+                                <button class=&quot;bg-white text-primary font-bold text-sm rounded-lg px-3 py-1.5 mt-2 w-full&quot;>Ler Agora</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class=&quot;grid grid-cols-2 gap-4 mt-4 pt-4 border-t border-white border-opacity-20&quot;>
-                    <div>
-                        <p class=&quot;text-sm opacity-90&quot;>Tempo total</p>
-                        <p class=&quot;text-lg font-bold&quot;>35h</p>
+
+                    <div id=&quot;event-card&quot; class=&quot;w-[280px] h-[140px] rounded-xl bg-gradient-to-r from-secondary to-pink-400 p-3 flex-shrink-0 relative overflow-hidden&quot;>
+                        <div class=&quot;absolute top-2 right-2 bg-white bg-opacity-90 rounded-lg px-2 py-1&quot;>
+                            <span class=&quot;text-xs font-bold text-secondary&quot;>Evento</span>
+                        </div>
+                        <div class=&quot;flex flex-col justify-between h-full&quot;>
+                            <div>
+                                <div class=&quot;flex items-center gap-2&quot;>
+                                    <i class=&quot;fa-solid fa-calendar-star text-white text-xl&quot;></i>
+                                    <h3 class=&quot;text-white font-bold text-lg&quot;>Semana do Conhecimento</h3>
+                                </div>
+                                <p class=&quot;text-white text-opacity-90 text-sm mt-1&quot;>Participe e ganhe 2x mais Hall Coins em todas as leituras!</p>
+                            </div>
+                            <button class=&quot;bg-white text-secondary font-bold text-sm rounded-lg px-3 py-1.5 mt-2&quot;>Participar</button>
+                        </div>
                     </div>
-                    <div>
-                        <button class=&quot;bg-white bg-opacity-20 text-white font-bold text-sm rounded-lg px-3 py-1.5 w-full&quot;>
-                            Ver Conquistas
-                        </button>
+
+                    <div id=&quot;challenge-card&quot; class=&quot;w-[280px] h-[140px] rounded-xl bg-gradient-to-r from-accent to-amber-400 p-3 flex-shrink-0 relative overflow-hidden&quot;>
+                        <div class=&quot;absolute top-2 right-2 bg-white bg-opacity-90 rounded-lg px-2 py-1&quot;>
+                            <span class=&quot;text-xs font-bold text-accent&quot;>Desafio</span>
+                        </div>
+                        <div class=&quot;flex flex-col justify-between h-full&quot;>
+                            <div>
+                                <div class=&quot;flex items-center gap-2&quot;>
+                                    <i class=&quot;fa-solid fa-trophy text-white text-xl&quot;></i>
+                                    <h3 class=&quot;text-white font-bold text-lg&quot;>Leia 1h por dia</h3>
+                                </div>
+                                <p class=&quot;text-white text-opacity-90 text-sm mt-1&quot;>Complete 7 dias seguidos e ganhe um e-book exclusivo!</p>
+                                <div class=&quot;bg-white bg-opacity-20 rounded-full h-2 mt-2&quot;>
+                                    <div class=&quot;bg-white rounded-full h-2 w-[40%]&quot;></div>
+                                </div>
+                            </div>
+                            <button class=&quot;bg-white text-accent font-bold text-sm rounded-lg px-3 py-1.5 mt-2&quot;>Continuar</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- View Mode Selector -->
-        <section id=&quot;view-modes&quot; class=&quot;px-4 mt-4&quot;>
-            <div class=&quot;flex bg-white rounded-xl p-1 shadow-sm border border-gray-100&quot;>
-                <button class=&quot;flex-1 bg-primary text-white font-semibold text-sm rounded-lg py-2 flex items-center justify-center gap-2&quot;>
-                    <i class=&quot;fa-solid fa-table-cells text-xs&quot;></i>
-                    <span>Estante</span>
-                </button>
-                <button class=&quot;flex-1 text-gray-600 font-semibold text-sm py-2 flex items-center justify-center gap-2&quot;>
-                    <i class=&quot;fa-solid fa-list text-xs&quot;></i>
-                    <span>Lista</span>
-                </button>
-                <button class=&quot;flex-1 text-gray-600 font-semibold text-sm py-2 flex items-center justify-center gap-2&quot;>
-                    <i class=&quot;fa-solid fa-bookmark text-xs&quot;></i>
-                    <span>Favoritos</span>
-                </button>
+        <!-- Search and Filters -->
+        <section id=&quot;search-filters&quot; class=&quot;px-4 mt-4&quot;>
+            <div class=&quot;relative&quot;>
+                <input type=&quot;text&quot; placeholder=&quot;Buscar e-books, autores...&quot; class=&quot;w-full rounded-full bg-white border border-gray-200 px-4 py-2.5 pl-10 text-sm&quot;>
+                <i class=&quot;fa-solid fa-magnifying-glass absolute left-4 top-3 text-gray-400&quot;></i>
+            </div>
+            
+            <div class=&quot;scroll-x -mx-4 px-4 mt-3&quot;>
+                <div class=&quot;flex gap-2 pb-2&quot;>
+                    <button class=&quot;bg-primary text-white font-semibold text-xs rounded-full px-4 py-1.5 flex items-center gap-1&quot;>
+                        <i class=&quot;fa-solid fa-grid-2 text-xs&quot;></i>
+                        <span>Todos</span>
+                    </button>
+                    <button class=&quot;bg-white text-gray-700 font-semibold text-xs rounded-full px-4 py-1.5 flex items-center gap-1 border border-gray-200&quot;>
+                        <i class=&quot;fa-solid fa-graduation-cap text-xs&quot;></i>
+                        <span>Educação</span>
+                    </button>
+                    <button class=&quot;bg-white text-gray-700 font-semibold text-xs rounded-full px-4 py-1.5 flex items-center gap-1 border border-gray-200&quot;>
+                        <i class=&quot;fa-solid fa-flask text-xs&quot;></i>
+                        <span>Ciências</span>
+                    </button>
+                    <button class=&quot;bg-white text-gray-700 font-semibold text-xs rounded-full px-4 py-1.5 flex items-center gap-1 border border-gray-200&quot;>
+                        <i class=&quot;fa-solid fa-calculator text-xs&quot;></i>
+                        <span>Matemática</span>
+                    </button>
+                    <button class=&quot;bg-white text-gray-700 font-semibold text-xs rounded-full px-4 py-1.5 flex items-center gap-1 border border-gray-200&quot;>
+                        <i class=&quot;fa-solid fa-language text-xs&quot;></i>
+                        <span>Idiomas</span>
+                    </button>
+                </div>
             </div>
         </section>
 
-        <!-- Virtual Shelf 3D -->
-        <section id=&quot;virtual-shelf&quot; class=&quot;px-4 mt-4&quot;>
+        <!-- Catálogo Inteligente -->
+        <section id=&quot;smart-catalog&quot; class=&quot;px-4 mt-4&quot;>
             <div class=&quot;flex justify-between items-center mb-3&quot;>
-                <h2 class=&quot;text-lg font-bold text-dark&quot;>📚 Minha Biblioteca Virtual</h2>
-                <button class=&quot;text-primary text-sm font-semibold flex items-center gap-1&quot;>
-                    <i class=&quot;fa-solid fa-palette text-xs&quot;></i>
-                    <span>Tema</span>
-                </button>
-            </div>
-
-            <!-- Shelf Container -->
-            <div class=&quot;shelf-gradient rounded-2xl p-4 relative overflow-hidden&quot;>
-                <!-- Shelf Background -->
-                <div class=&quot;absolute inset-0 opacity-10&quot;>
-                    <div class=&quot;absolute bottom-0 left-0 right-0 h-2 bg-white rounded-full&quot;></div>
-                    <div class=&quot;absolute bottom-8 left-0 right-0 h-2 bg-white rounded-full&quot;></div>
-                    <div class=&quot;absolute bottom-16 left-0 right-0 h-2 bg-white rounded-full&quot;></div>
-                </div>
-
-                <!-- Books Grid -->
-                <div class=&quot;relative z-10&quot;>
-                    <!-- First Shelf -->
-                    <div class=&quot;grid grid-cols-4 gap-2 mb-6&quot;>
-                        <div id=&quot;shelf-book-1&quot; class=&quot;relative&quot;>
-                            <div class=&quot;w-full h-20 rounded-lg overflow-hidden shadow-lg transform rotate-1&quot;>
-                                <img class=&quot;w-full h-full object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/5955032eca-cd7045e7afe58a9be1e7.png&quot; alt=&quot;educational physics book cover, modern design, purple theme&quot;>
-                            </div>
-                            <div class=&quot;absolute -top-1 -right-1 w-4 h-4 bg-accent rounded-full flex items-center justify-center&quot;>
-                                <span class=&quot;text-[8px] font-bold text-white&quot;>65%</span>
-                            </div>
-                            <i class=&quot;fa-solid fa-star absolute top-1 left-1 text-yellow-400 text-xs&quot;></i>
-                        </div>
-
-                        <div id=&quot;shelf-book-2&quot; class=&quot;relative&quot;>
-                            <div class=&quot;w-full h-20 rounded-lg overflow-hidden shadow-lg transform -rotate-2&quot;>
-                                <img class=&quot;w-full h-full object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/aa8a75c5b7-dfe2d746db9f1bae822d.png&quot; alt=&quot;educational biology book cover, modern design, green theme&quot;>
-                            </div>
-                            <div class=&quot;absolute -top-1 -right-1 w-4 h-4 bg-green-500 rounded-full flex items-center justify-center&quot;>
-                                <i class=&quot;fa-solid fa-check text-white text-[8px]&quot;></i>
-                            </div>
-                        </div>
-
-                        <div id=&quot;shelf-book-3&quot; class=&quot;relative&quot;>
-                            <div class=&quot;w-full h-20 rounded-lg overflow-hidden shadow-lg&quot;>
-                                <img class=&quot;w-full h-full object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/58d2a48225-fef0484ba27b8b115a22.png&quot; alt=&quot;educational chemistry book cover, modern design, orange theme&quot;>
-                            </div>
-                            <div class=&quot;absolute -top-1 -right-1 w-4 h-4 bg-secondary rounded-full flex items-center justify-center&quot;>
-                                <span class=&quot;text-[8px] font-bold text-white&quot;>30%</span>
-                            </div>
-                            <i class=&quot;fa-solid fa-star absolute top-1 left-1 text-yellow-400 text-xs&quot;></i>
-                        </div>
-
-                        <div id=&quot;shelf-book-4&quot; class=&quot;relative&quot;>
-                            <div class=&quot;w-full h-20 rounded-lg overflow-hidden shadow-lg transform rotate-2&quot;>
-                                <img class=&quot;w-full h-full object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/9ef01cdc64-42ea37aac6a1d4fd6142.png&quot; alt=&quot;educational history book cover, modern design, red theme&quot;>
-                            </div>
-                            <div class=&quot;absolute -top-1 -right-1 w-4 h-4 bg-primary rounded-full flex items-center justify-center&quot;>
-                                <span class=&quot;text-[8px] font-bold text-white&quot;>85%</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Second Shelf -->
-                    <div class=&quot;grid grid-cols-4 gap-2 mb-6&quot;>
-                        <div id=&quot;shelf-book-5&quot; class=&quot;relative&quot;>
-                            <div class=&quot;w-full h-20 rounded-lg overflow-hidden shadow-lg transform -rotate-1&quot;>
-                                <img class=&quot;w-full h-full object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/270ac3fdef-3c6c5a584964fe7256fb.png&quot; alt=&quot;educational mathematics book cover, modern design, blue theme&quot;>
-                            </div>
-                            <div class=&quot;absolute -top-1 -right-1 w-4 h-4 bg-green-500 rounded-full flex items-center justify-center&quot;>
-                                <i class=&quot;fa-solid fa-check text-white text-[8px]&quot;></i>
-                            </div>
-                            <i class=&quot;fa-solid fa-star absolute top-1 left-1 text-yellow-400 text-xs&quot;></i>
-                        </div>
-
-                        <div id=&quot;shelf-book-6&quot; class=&quot;relative&quot;>
-                            <div class=&quot;w-full h-20 rounded-lg overflow-hidden shadow-lg transform rotate-1&quot;>
-                                <img class=&quot;w-full h-full object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/82223ec43d-7971f853f947ffe98a63.png&quot; alt=&quot;educational geography book cover, modern design, teal theme&quot;>
-                            </div>
-                            <div class=&quot;absolute -top-1 -right-1 w-4 h-4 bg-accent rounded-full flex items-center justify-center&quot;>
-                                <span class=&quot;text-[8px] font-bold text-white&quot;>45%</span>
-                            </div>
-                        </div>
-
-                        <div id=&quot;shelf-book-7&quot; class=&quot;relative&quot;>
-                            <div class=&quot;w-full h-20 rounded-lg overflow-hidden shadow-lg&quot;>
-                                <img class=&quot;w-full h-full object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/cd7254e2a9-31690c4a4dfd7439c4d2.png&quot; alt=&quot;educational literature book cover, modern design, purple theme&quot;>
-                            </div>
-                            <div class=&quot;absolute -top-1 -right-1 w-4 h-4 bg-green-500 rounded-full flex items-center justify-center&quot;>
-                                <i class=&quot;fa-solid fa-check text-white text-[8px]&quot;></i>
-                            </div>
-                        </div>
-
-                        <div id=&quot;shelf-book-8&quot; class=&quot;relative&quot;>
-                            <div class=&quot;w-full h-20 rounded-lg overflow-hidden shadow-lg transform -rotate-2&quot;>
-                                <img class=&quot;w-full h-full object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/ad7fae2105-5f1b58b03a12cec23475.png&quot; alt=&quot;educational programming book cover, modern design, dark theme&quot;>
-                            </div>
-                            <div class=&quot;absolute -top-1 -right-1 w-4 h-4 bg-primary rounded-full flex items-center justify-center&quot;>
-                                <span class=&quot;text-[8px] font-bold text-white&quot;>12%</span>
-                            </div>
-                            <i class=&quot;fa-solid fa-star absolute top-1 left-1 text-yellow-400 text-xs&quot;></i>
-                        </div>
-                    </div>
-
-                    <!-- Third Shelf -->
-                    <div class=&quot;grid grid-cols-4 gap-2&quot;>
-                        <div id=&quot;shelf-book-9&quot; class=&quot;relative&quot;>
-                            <div class=&quot;w-full h-20 rounded-lg overflow-hidden shadow-lg transform rotate-1&quot;>
-                                <img class=&quot;w-full h-full object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/ac7cf0e14d-471c3c1d9dbe708faeb5.png&quot; alt=&quot;educational astronomy book cover, modern design, dark blue theme&quot;>
-                            </div>
-                            <div class=&quot;absolute -top-1 -right-1 w-4 h-4 bg-green-500 rounded-full flex items-center justify-center&quot;>
-                                <i class=&quot;fa-solid fa-check text-white text-[8px]&quot;></i>
-                            </div>
-                        </div>
-
-                        <div id=&quot;shelf-book-10&quot; class=&quot;relative&quot;>
-                            <div class=&quot;w-full h-20 rounded-lg overflow-hidden shadow-lg&quot;>
-                                <img class=&quot;w-full h-full object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/aade953167-8704117af73371467d12.png&quot; alt=&quot;educational psychology book cover, modern design, pink theme&quot;>
-                            </div>
-                            <div class=&quot;absolute -top-1 -right-1 w-4 h-4 bg-secondary rounded-full flex items-center justify-center&quot;>
-                                <span class=&quot;text-[8px] font-bold text-white&quot;>78%</span>
-                            </div>
-                            <i class=&quot;fa-solid fa-star absolute top-1 left-1 text-yellow-400 text-xs&quot;></i>
-                        </div>
-
-                        <div class=&quot;w-full h-20 rounded-lg border-2 border-dashed border-white border-opacity-50 flex items-center justify-center&quot;>
-                            <i class=&quot;fa-solid fa-plus text-white text-xl opacity-50&quot;></i>
-                        </div>
-
-                        <div class=&quot;w-full h-20 rounded-lg border-2 border-dashed border-white border-opacity-50 flex items-center justify-center&quot;>
-                            <i class=&quot;fa-solid fa-plus text-white text-xl opacity-50&quot;></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Reading Statistics -->
-        <section id=&quot;reading-stats&quot; class=&quot;px-4 mt-6&quot;>
-            <div class=&quot;flex justify-between items-center mb-3&quot;>
-                <h2 class=&quot;text-lg font-bold text-dark&quot;>📈 Estatísticas</h2>
-                <button class=&quot;text-primary text-sm font-semibold&quot;>Ver detalhes</button>
+                <h2 class=&quot;text-lg font-bold text-dark&quot;>Recomendados para você</h2>
+                <button class=&quot;text-primary text-sm font-semibold&quot;>Ver todos</button>
             </div>
 
             <div class=&quot;grid grid-cols-2 gap-3&quot;>
-                <div id=&quot;stat-card-1&quot; class=&quot;bg-white rounded-xl p-3 shadow-sm border border-gray-100&quot;>
-                    <div class=&quot;flex items-center gap-2 mb-2&quot;>
-                        <div class=&quot;w-8 h-8 rounded-full bg-primary bg-opacity-10 flex items-center justify-center&quot;>
-                            <i class=&quot;fa-solid fa-clock text-primary text-sm&quot;></i>
+                <div id=&quot;book-card-1&quot; class=&quot;bg-white rounded-xl p-3 shadow-sm border border-gray-100&quot;>
+                    <div class=&quot;relative&quot;>
+                        <div class=&quot;w-full h-[140px] rounded-lg overflow-hidden bg-gray-100&quot;>
+                            <img class=&quot;w-full h-full object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/736da26fc3-38a59959638f51081626.png&quot; alt=&quot;educational ebook cover about physics, colorful, modern design&quot;>
                         </div>
-                        <span class=&quot;text-sm font-semibold text-dark&quot;>Esta Semana</span>
+                        <span class=&quot;absolute top-2 right-2 bg-primary text-white text-[10px] font-bold px-2 py-0.5 rounded-full&quot;>NOVO</span>
+                        <div class=&quot;absolute bottom-2 right-2 bg-white rounded-full w-7 h-7 flex items-center justify-center shadow-md&quot;>
+                            <i class=&quot;fa-solid fa-question text-primary text-xs&quot;></i>
+                        </div>
                     </div>
-                    <p class=&quot;text-2xl font-bold text-dark&quot;>8h 30m</p>
-                    <p class=&quot;text-xs text-green-600 font-semibold&quot;>+2h vs semana passada</p>
+                    <h3 class=&quot;font-bold text-dark mt-2 text-sm&quot;>Física Quântica Simplificada</h3>
+                    <p class=&quot;text-gray-500 text-xs&quot;>Prof. Eduardo Santos</p>
+                    <div class=&quot;flex items-center gap-2 mt-1&quot;>
+                        <i class=&quot;fa-regular fa-clock text-xs text-gray-400&quot;></i>
+                        <span class=&quot;text-xs text-gray-500&quot;>4h 30min</span>
+                    </div>
+                    <button class=&quot;bg-primary text-white font-bold text-xs rounded-lg w-full py-2 mt-2&quot;>Ler Agora</button>
                 </div>
 
-                <div id=&quot;stat-card-2&quot; class=&quot;bg-white rounded-xl p-3 shadow-sm border border-gray-100&quot;>
-                    <div class=&quot;flex items-center gap-2 mb-2&quot;>
-                        <div class=&quot;w-8 h-8 rounded-full bg-secondary bg-opacity-10 flex items-center justify-center&quot;>
-                            <i class=&quot;fa-solid fa-heart text-secondary text-sm&quot;></i>
+                <div id=&quot;book-card-2&quot; class=&quot;bg-white rounded-xl p-3 shadow-sm border border-gray-100&quot;>
+                    <div class=&quot;relative&quot;>
+                        <div class=&quot;w-full h-[140px] rounded-lg overflow-hidden bg-gray-100&quot;>
+                            <img class=&quot;w-full h-full object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/736da26fc3-14e146c6efe89b461f1c.png&quot; alt=&quot;educational ebook cover about biology, colorful, modern design&quot;>
                         </div>
-                        <span class=&quot;text-sm font-semibold text-dark&quot;>Gênero Favorito</span>
+                        <span class=&quot;absolute top-2 right-2 bg-accent text-white text-[10px] font-bold px-2 py-0.5 rounded-full&quot;>POPULAR</span>
+                        <div class=&quot;absolute bottom-2 right-2 bg-white rounded-full w-7 h-7 flex items-center justify-center shadow-md&quot;>
+                            <i class=&quot;fa-solid fa-question text-primary text-xs&quot;></i>
+                        </div>
                     </div>
-                    <p class=&quot;text-lg font-bold text-dark&quot;>Ciências</p>
-                    <p class=&quot;text-xs text-gray-500&quot;>45% das suas leituras</p>
+                    <h3 class=&quot;font-bold text-dark mt-2 text-sm&quot;>Biologia Celular</h3>
+                    <p class=&quot;text-gray-500 text-xs&quot;>Dra. Ana Oliveira</p>
+                    <div class=&quot;flex items-center gap-2 mt-1&quot;>
+                        <i class=&quot;fa-regular fa-clock text-xs text-gray-400&quot;></i>
+                        <span class=&quot;text-xs text-gray-500&quot;>3h 15min</span>
+                    </div>
+                    <div class=&quot;w-full bg-gray-200 rounded-full h-1.5 mt-2&quot;>
+                        <div class=&quot;bg-primary rounded-full h-1.5 w-[65%]&quot;></div>
+                    </div>
+                    <button class=&quot;bg-primary text-white font-bold text-xs rounded-lg w-full py-2 mt-2&quot;>Continuar</button>
                 </div>
 
-                <div id=&quot;stat-card-3&quot; class=&quot;bg-white rounded-xl p-3 shadow-sm border border-gray-100&quot;>
-                    <div class=&quot;flex items-center gap-2 mb-2&quot;>
-                        <div class=&quot;w-8 h-8 rounded-full bg-accent bg-opacity-10 flex items-center justify-center&quot;>
-                            <i class=&quot;fa-solid fa-question text-accent text-sm&quot;></i>
+                <div id=&quot;book-card-3&quot; class=&quot;bg-white rounded-xl p-3 shadow-sm border border-gray-100&quot;>
+                    <div class=&quot;relative&quot;>
+                        <div class=&quot;w-full h-[140px] rounded-lg overflow-hidden bg-gray-100&quot;>
+                            <img class=&quot;w-full h-full object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/736da26fc3-71bfba2e1e184302c6dd.png&quot; alt=&quot;educational ebook cover about history, colorful, modern design&quot;>
                         </div>
-                        <span class=&quot;text-sm font-semibold text-dark&quot;>Quizzes</span>
+                        <span class=&quot;absolute top-2 right-2 bg-secondary text-white text-[10px] font-bold px-2 py-0.5 rounded-full&quot;>EXCLUSIVO</span>
                     </div>
-                    <p class=&quot;text-2xl font-bold text-dark&quot;>24</p>
-                    <p class=&quot;text-xs text-gray-500&quot;>Concluídos este mês</p>
+                    <h3 class=&quot;font-bold text-dark mt-2 text-sm&quot;>História Contemporânea</h3>
+                    <p class=&quot;text-gray-500 text-xs&quot;>Prof. Ricardo Almeida</p>
+                    <div class=&quot;flex items-center gap-2 mt-1&quot;>
+                        <i class=&quot;fa-regular fa-clock text-xs text-gray-400&quot;></i>
+                        <span class=&quot;text-xs text-gray-500&quot;>5h 45min</span>
+                    </div>
+                    <button class=&quot;bg-primary text-white font-bold text-xs rounded-lg w-full py-2 mt-2&quot;>Ler Agora</button>
                 </div>
 
-                <div id=&quot;stat-card-4&quot; class=&quot;bg-white rounded-xl p-3 shadow-sm border border-gray-100&quot;>
-                    <div class=&quot;flex items-center gap-2 mb-2&quot;>
-                        <div class=&quot;w-8 h-8 rounded-full bg-green-100 flex items-center justify-center&quot;>
-                            <i class=&quot;fa-solid fa-route text-green-600 text-sm&quot;></i>
+                <div id=&quot;book-card-4&quot; class=&quot;bg-white rounded-xl p-3 shadow-sm border border-gray-100&quot;>
+                    <div class=&quot;relative&quot;>
+                        <div class=&quot;w-full h-[140px] rounded-lg overflow-hidden bg-gray-100&quot;>
+                            <img class=&quot;w-full h-full object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/736da26fc3-43a6728d9fb075708e59.png&quot; alt=&quot;educational ebook cover about chemistry, colorful, modern design&quot;>
                         </div>
-                        <span class=&quot;text-sm font-semibold text-dark&quot;>Trilhas</span>
+                        <div class=&quot;absolute bottom-2 right-2 bg-white rounded-full w-7 h-7 flex items-center justify-center shadow-md&quot;>
+                            <i class=&quot;fa-solid fa-question text-primary text-xs&quot;></i>
+                        </div>
                     </div>
-                    <p class=&quot;text-lg font-bold text-dark&quot;>3 de 6</p>
-                    <p class=&quot;text-xs text-gray-500&quot;>Arquitetura Moderna</p>
+                    <h3 class=&quot;font-bold text-dark mt-2 text-sm&quot;>Química Orgânica</h3>
+                    <p class=&quot;text-gray-500 text-xs&quot;>Prof. Marcos Pereira</p>
+                    <div class=&quot;flex items-center gap-2 mt-1&quot;>
+                        <i class=&quot;fa-regular fa-clock text-xs text-gray-400&quot;></i>
+                        <span class=&quot;text-xs text-gray-500&quot;>4h 10min</span>
+                    </div>
+                    <div class=&quot;w-full bg-gray-200 rounded-full h-1.5 mt-2&quot;>
+                        <div class=&quot;bg-primary rounded-full h-1.5 w-[25%]&quot;></div>
+                    </div>
+                    <button class=&quot;bg-primary text-white font-bold text-xs rounded-lg w-full py-2 mt-2&quot;>Continuar</button>
                 </div>
             </div>
         </section>
 
-        <!-- My Rewards -->
-        <section id=&quot;rewards&quot; class=&quot;px-4 mt-6&quot;>
+        <!-- Missões &amp; Conquistas -->
+        <section id=&quot;missions&quot; class=&quot;px-4 mt-6&quot;>
             <div class=&quot;flex justify-between items-center mb-3&quot;>
-                <h2 class=&quot;text-lg font-bold text-dark&quot;>🎁 Minhas Recompensas</h2>
+                <h2 class=&quot;text-lg font-bold text-dark&quot;>🗺️ Minhas Missões</h2>
                 <button class=&quot;text-primary text-sm font-semibold&quot;>Ver todas</button>
             </div>
 
             <div class=&quot;space-y-3&quot;>
-                <div id=&quot;reward-card-1&quot; class=&quot;bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl p-3 text-white&quot;>
-                    <div class=&quot;flex items-center gap-3&quot;>
-                        <div class=&quot;w-12 h-12 rounded-full bg-white bg-opacity-20 flex items-center justify-center&quot;>
-                            <i class=&quot;fa-solid fa-sparkles text-xl&quot;></i>
+                <div id=&quot;mission-card-1&quot; class=&quot;bg-white rounded-xl p-3 shadow-sm border border-gray-100 flex items-center gap-3&quot;>
+                    <div class=&quot;w-12 h-12 rounded-full bg-primary bg-opacity-10 flex items-center justify-center flex-shrink-0&quot;>
+                        <i class=&quot;fa-solid fa-book text-primary&quot;></i>
+                    </div>
+                    <div class=&quot;flex-1&quot;>
+                        <h3 class=&quot;font-bold text-dark text-sm&quot;>Leia 3 capítulos hoje</h3>
+                        <div class=&quot;w-full bg-gray-200 rounded-full h-1.5 mt-1.5&quot;>
+                            <div class=&quot;bg-primary rounded-full h-1.5 w-[33%]&quot;></div>
                         </div>
-                        <div class=&quot;flex-1&quot;>
-                            <h3 class=&quot;font-bold text-sm&quot;>Tema Neon Galaxy desbloqueado!</h3>
-                            <p class=&quot;text-xs opacity-90&quot;>Personalize sua estante com o novo tema</p>
-                        </div>
-                        <button class=&quot;bg-white bg-opacity-20 text-white font-bold text-xs rounded-lg px-3 py-1.5&quot;>
-                            Aplicar
-                        </button>
+                        <p class=&quot;text-xs text-gray-500 mt-1&quot;>1 de 3 completos</p>
+                    </div>
+                    <div class=&quot;flex items-center gap-1 bg-gray-100 rounded-lg px-2 py-1&quot;>
+                        <i class=&quot;fa-solid fa-coins text-accent text-xs&quot;></i>
+                        <span class=&quot;text-xs font-bold&quot;>+15</span>
                     </div>
                 </div>
 
-                <div id=&quot;reward-card-2&quot; class=&quot;bg-gradient-to-r from-pink-500 to-rose-500 rounded-xl p-3 text-white&quot;>
-                    <div class=&quot;flex items-center gap-3&quot;>
-                        <div class=&quot;w-12 h-12 rounded-full bg-white bg-opacity-20 flex items-center justify-center&quot;>
-                            <i class=&quot;fa-solid fa-user-circle text-xl&quot;></i>
+                <div id=&quot;mission-card-2&quot; class=&quot;bg-white rounded-xl p-3 shadow-sm border border-gray-100 flex items-center gap-3&quot;>
+                    <div class=&quot;w-12 h-12 rounded-full bg-secondary bg-opacity-10 flex items-center justify-center flex-shrink-0&quot;>
+                        <i class=&quot;fa-solid fa-question text-secondary&quot;></i>
+                    </div>
+                    <div class=&quot;flex-1&quot;>
+                        <h3 class=&quot;font-bold text-dark text-sm&quot;>Faça 1 quiz</h3>
+                        <div class=&quot;w-full bg-gray-200 rounded-full h-1.5 mt-1.5&quot;>
+                            <div class=&quot;bg-secondary rounded-full h-1.5 w-[0%]&quot;></div>
                         </div>
-                        <div class=&quot;flex-1&quot;>
-                            <h3 class=&quot;font-bold text-sm&quot;>Nova moldura de perfil</h3>
-                            <p class=&quot;text-xs opacity-90&quot;>Moldura &quot;Estudioso Dedicado&quot; disponível</p>
-                        </div>
-                        <button class=&quot;bg-white bg-opacity-20 text-white font-bold text-xs rounded-lg px-3 py-1.5&quot;>
-                            Usar
-                        </button>
+                        <p class=&quot;text-xs text-gray-500 mt-1&quot;>0 de 1 completos</p>
+                    </div>
+                    <div class=&quot;flex items-center gap-1 bg-gray-100 rounded-lg px-2 py-1&quot;>
+                        <i class=&quot;fa-solid fa-coins text-accent text-xs&quot;></i>
+                        <span class=&quot;text-xs font-bold&quot;>+10</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Book Actions Menu (Hidden by default) -->
-        <div id=&quot;book-actions-menu&quot; class=&quot;fixed inset-0 bg-black bg-opacity-50 z-50 hidden&quot;>
-            <div class=&quot;absolute bottom-0 left-0 right-0 bg-white rounded-t-2xl p-4&quot;>
-                <div class=&quot;w-12 h-1 bg-gray-300 rounded-full mx-auto mb-4&quot;></div>
-                <div class=&quot;space-y-3&quot;>
-                    <button class=&quot;w-full text-left flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50&quot;>
-                        <i class=&quot;fa-solid fa-book-open text-primary&quot;></i>
-                        <span class=&quot;font-semibold&quot;>Continuar Leitura</span>
-                    </button>
-                    <button class=&quot;w-full text-left flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50&quot;>
-                        <i class=&quot;fa-solid fa-arrow-right-arrow-left text-accent&quot;></i>
-                        <span class=&quot;font-semibold&quot;>Oferecer para Troca</span>
-                    </button>
-                    <button class=&quot;w-full text-left flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50&quot;>
-                        <i class=&quot;fa-solid fa-comments text-secondary&quot;></i>
-                        <span class=&quot;font-semibold&quot;>Discutir com Clube</span>
-                    </button>
-                    <button class=&quot;w-full text-left flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50&quot;>
-                        <i class=&quot;fa-solid fa-bookmark text-green-600&quot;></i>
-                        <span class=&quot;font-semibold&quot;>Adicionar Anotação</span>
-                    </button>
-                    <button class=&quot;w-full text-left flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50&quot;>
-                        <i class=&quot;fa-solid fa-trash text-red-500&quot;></i>
-                        <span class=&quot;font-semibold text-red-500&quot;>Remover da Estante</span>
-                    </button>
+        <!-- Clube de Leitura -->
+        <section id=&quot;reading-club&quot; class=&quot;px-4 mt-6&quot;>
+            <div class=&quot;flex justify-between items-center mb-3&quot;>
+                <h2 class=&quot;text-lg font-bold text-dark&quot;>🤝 Clube de Leitura</h2>
+                <button class=&quot;text-primary text-sm font-semibold&quot;>Ver mais</button>
+            </div>
+
+            <div class=&quot;bg-white rounded-xl p-4 shadow-sm border border-gray-100&quot;>
+                <div class=&quot;flex items-center gap-3&quot;>
+                    <div class=&quot;relative flex -space-x-2&quot;>
+                        <img src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg&quot; class=&quot;w-8 h-8 rounded-full border-2 border-white&quot;>
+                        <img src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg&quot; class=&quot;w-8 h-8 rounded-full border-2 border-white&quot;>
+                        <img src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg&quot; class=&quot;w-8 h-8 rounded-full border-2 border-white&quot;>
+                        <div class=&quot;w-8 h-8 rounded-full bg-gray-100 border-2 border-white flex items-center justify-center text-xs font-bold text-gray-500&quot;>+4</div>
+                    </div>
+                    <div class=&quot;flex-1&quot;>
+                        <h3 class=&quot;font-bold text-dark text-sm&quot;>Grupo de Ciências</h3>
+                        <p class=&quot;text-xs text-gray-500&quot;>7 membros ativos</p>
+                    </div>
+                </div>
+                <p class=&quot;text-sm text-gray-600 mt-2&quot;>Discutindo agora: &quot;Física Quântica Simplificada&quot; - Cap. 3</p>
+                <div class=&quot;flex gap-2 mt-3&quot;>
+                    <button class=&quot;bg-primary text-white font-bold text-xs rounded-lg flex-1 py-2&quot;>Entrar</button>
+                    <button class=&quot;bg-white text-primary border border-primary font-bold text-xs rounded-lg flex-1 py-2&quot;>Criar Grupo</button>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Loja Rápida -->
+        <section id=&quot;quick-shop&quot; class=&quot;px-4 mt-6 mb-4&quot;>
+            <div class=&quot;flex justify-between items-center mb-3&quot;>
+                <h2 class=&quot;text-lg font-bold text-dark&quot;>🛍️ Loja Rápida</h2>
+                <button class=&quot;text-primary text-sm font-semibold&quot;>Ver loja</button>
+            </div>
+
+            <div class=&quot;scroll-x -mx-4 px-4&quot;>
+                <div class=&quot;flex gap-3 pb-4&quot;>
+                    <div id=&quot;shop-card-1&quot; class=&quot;w-[140px] bg-white rounded-xl p-3 shadow-sm border border-gray-100 flex-shrink-0&quot;>
+                        <div class=&quot;w-full h-[100px] rounded-lg overflow-hidden bg-gray-100&quot;>
+                            <img class=&quot;w-full h-full object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/736da26fc3-cd73a2a35d558e20642f.png&quot; alt=&quot;educational ebook cover about astronomy, colorful, modern design&quot;>
+                        </div>
+                        <h3 class=&quot;font-bold text-dark mt-2 text-xs leading-tight&quot;>Astronomia Básica</h3>
+                        <div class=&quot;flex items-center gap-1 mt-1&quot;>
+                            <i class=&quot;fa-solid fa-coins text-accent text-xs&quot;></i>
+                            <span class=&quot;text-xs font-bold&quot;>120</span>
+                        </div>
+                        <button class=&quot;bg-primary text-white font-bold text-[10px] rounded-lg w-full py-1.5 mt-2&quot;>Comprar</button>
+                    </div>
+
+                    <div id=&quot;shop-card-2&quot; class=&quot;w-[140px] bg-white rounded-xl p-3 shadow-sm border border-gray-100 flex-shrink-0&quot;>
+                        <div class=&quot;w-full h-[100px] rounded-lg overflow-hidden bg-gray-100&quot;>
+                            <img class=&quot;w-full h-full object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/736da26fc3-f290c926c1da87262508.png&quot; alt=&quot;educational ebook cover about geography, colorful, modern design&quot;>
+                        </div>
+                        <h3 class=&quot;font-bold text-dark mt-2 text-xs leading-tight&quot;>Geografia Mundial</h3>
+                        <div class=&quot;flex items-center gap-1 mt-1&quot;>
+                            <i class=&quot;fa-solid fa-coins text-accent text-xs&quot;></i>
+                            <span class=&quot;text-xs font-bold&quot;>85</span>
+                        </div>
+                        <button class=&quot;bg-primary text-white font-bold text-[10px] rounded-lg w-full py-1.5 mt-2&quot;>Comprar</button>
+                    </div>
+
+                    <div id=&quot;shop-card-3&quot; class=&quot;w-[140px] bg-white rounded-xl p-3 shadow-sm border border-gray-100 flex-shrink-0&quot;>
+                        <div class=&quot;w-full h-[100px] rounded-lg overflow-hidden bg-gray-100&quot;>
+                            <img class=&quot;w-full h-full object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/736da26fc3-52ea5b1bba2f25ac6dd3.png&quot; alt=&quot;educational ebook cover about literature, colorful, modern design&quot;>
+                        </div>
+                        <h3 class=&quot;font-bold text-dark mt-2 text-xs leading-tight&quot;>Literatura Brasileira</h3>
+                        <div class=&quot;flex items-center gap-1 mt-1&quot;>
+                            <i class=&quot;fa-solid fa-coins text-accent text-xs&quot;></i>
+                            <span class=&quot;text-xs font-bold&quot;>150</span>
+                        </div>
+                        <button class=&quot;bg-primary text-white font-bold text-[10px] rounded-lg w-full py-1.5 mt-2&quot;>Comprar</button>
+                    </div>
+
+                    <div id=&quot;shop-card-4&quot; class=&quot;w-[140px] bg-white rounded-xl p-3 shadow-sm border border-gray-100 flex-shrink-0&quot;>
+                        <div class=&quot;w-full h-[100px] rounded-lg overflow-hidden bg-gray-100&quot;>
+                            <img class=&quot;w-full h-full object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/736da26fc3-d85fa4d8300a056f845d.png&quot; alt=&quot;educational ebook cover about programming, colorful, modern design&quot;>
+                        </div>
+                        <h3 class=&quot;font-bold text-dark mt-2 text-xs leading-tight&quot;>Programação Python</h3>
+                        <div class=&quot;flex items-center gap-1 mt-1&quot;>
+                            <i class=&quot;fa-solid fa-coins text-accent text-xs&quot;></i>
+                            <span class=&quot;text-xs font-bold&quot;>200</span>
+                        </div>
+                        <button class=&quot;bg-primary text-white font-bold text-[10px] rounded-lg w-full py-1.5 mt-2&quot;>Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Bottom Navigation -->
-    <nav id=&quot;bottom-nav&quot; class=&quot;fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-4 py-2&quot;>
-        <div class=&quot;flex justify-between items-center&quot;>
-            <button class=&quot;flex flex-col items-center gap-1 py-1 px-3&quot;>
-                <i class=&quot;fa-solid fa-book text-gray-400 text-lg&quot;></i>
-                <span class=&quot;text-xs text-gray-400 font-medium&quot;>E-books</span>
-            </button>
-            
-            <button class=&quot;flex flex-col items-center gap-1 py-1 px-3&quot;>
-                <i class=&quot;fa-solid fa-bookmark text-primary text-lg&quot;></i>
-                <span class=&quot;text-xs text-primary font-bold&quot;>Estante</span>
-            </button>
-            
-            <button class=&quot;flex flex-col items-center gap-1 py-1 px-3&quot;>
-                <i class=&quot;fa-solid fa-trophy text-gray-400 text-lg&quot;></i>
-                <span class=&quot;text-xs text-gray-400 font-medium&quot;>Conquistas</span>
-            </button>
-            
-            <button class=&quot;flex flex-col items-center gap-1 py-1 px-3&quot;>
-                <i class=&quot;fa-solid fa-user text-gray-400 text-lg&quot;></i>
-                <span class=&quot;text-xs text-gray-400 font-medium&quot;>Perfil</span>
-            </button>
-            
-            <button class=&quot;flex flex-col items-center gap-1 py-1 px-3&quot;>
-                <i class=&quot;fa-solid fa-store text-gray-400 text-lg&quot;></i>
-                <span class=&quot;text-xs text-gray-400 font-medium&quot;>Loja</span>
-            </button>
-        </div>
+    <nav id=&quot;bottom-nav&quot; class=&quot;fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-2 py-2 flex items-center justify-between z-50&quot;>
+        <button class=&quot;flex flex-col items-center justify-center w-1/5 py-1 text-primary&quot;>
+            <i class=&quot;fa-solid fa-book-open text-lg&quot;></i>
+            <span class=&quot;text-[10px] font-semibold mt-1&quot;>E-books</span>
+        </button>
+        <button class=&quot;flex flex-col items-center justify-center w-1/5 py-1 text-gray-400&quot;>
+            <i class=&quot;fa-solid fa-bookmark text-lg&quot;></i>
+            <span class=&quot;text-[10px] font-semibold mt-1&quot;>Estante</span>
+        </button>
+        <button class=&quot;flex flex-col items-center justify-center w-1/5 py-1 text-gray-400&quot;>
+            <i class=&quot;fa-solid fa-trophy text-lg&quot;></i>
+            <span class=&quot;text-[10px] font-semibold mt-1&quot;>Conquistas</span>
+        </button>
+        <button class=&quot;flex flex-col items-center justify-center w-1/5 py-1 text-gray-400&quot;>
+            <i class=&quot;fa-solid fa-user text-lg&quot;></i>
+            <span class=&quot;text-[10px] font-semibold mt-1&quot;>Perfil</span>
+        </button>
+        <button class=&quot;flex flex-col items-center justify-center w-1/5 py-1 text-gray-400&quot;>
+            <i class=&quot;fa-solid fa-store text-lg&quot;></i>
+            <span class=&quot;text-[10px] font-semibold mt-1&quot;>Loja</span>
+        </button>
     </nav>
 
-    <script>
-        // Book long press functionality
-        let pressTimer;
-        const books = document.querySelectorAll('[id^=&quot;shelf-book-&quot;]');
-        const actionMenu = document.getElementById('book-actions-menu');
-
-        books.forEach(book => {
-            book.addEventListener('mousedown', startPress);
-            book.addEventListener('touchstart', startPress);
-            book.addEventListener('mouseup', cancelPress);
-            book.addEventListener('mouseleave', cancelPress);
-            book.addEventListener('touchend', cancelPress);
-        });
-
-        function startPress(e) {
-            pressTimer = setTimeout(() => {
-                actionMenu.classList.remove('hidden');
-            }, 500);
-        }
-
-        function cancelPress() {
-            clearTimeout(pressTimer);
-        }
-
-        // Close action menu
-        actionMenu.addEventListener('click', (e) => {
-            if (e.target === actionMenu) {
-                actionMenu.classList.add('hidden');
-            }
-        });
-
-        // View mode switching
-        const viewButtons = document.querySelectorAll('#view-modes button');
-        viewButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                viewButtons.forEach(btn => {
-                    btn.classList.remove('bg-primary', 'text-white');
-                    btn.classList.add('text-gray-600');
-                });
-                button.classList.add('bg-primary', 'text-white');
-                button.classList.remove('text-gray-600');
-            });
-        });
-    </script>
-
-</body></html>" frameborder="0" class="border-2 border-carbon-200 rounded-lg bg-white w-full h-full" style="width: 390px; height: 2254px;"></iframe>
+</body></html>" frameborder="0" class="border-2 border-carbon-200 rounded-lg bg-white w-full h-full" style="width: 390px; height: 2261px;"></iframe>
